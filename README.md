@@ -1,5 +1,4 @@
 # [mtsklrck.com](mtsklrck.com)
-======
 
 ## Technologies used:
 1. next.js
