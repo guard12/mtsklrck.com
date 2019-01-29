@@ -1,6 +1,7 @@
-import HeaderComponent from './Header'
 import Head from 'next/head'
 import { Grid, Header } from 'semantic-ui-react'
+import HeaderComponent from './Header'
+import Footer from './Footer'
 
 const Layout = (props) => (
   <div>
@@ -17,6 +18,11 @@ const Layout = (props) => (
             </Grid.Column>
         </Grid.Row>
         {props.children}
+        <Grid.Row columns={1} style={{paddingBottom: "0rem"}}>
+            <Grid.Column width={10}>
+                <Footer />
+            </Grid.Column>
+        </Grid.Row>
     </Grid> 
   </div>
 )

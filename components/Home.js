@@ -1,10 +1,11 @@
 import { 
     Grid, 
-    Header, 
+    Divider, 
     Icon, 
     Container, 
     Flag 
 } from 'semantic-ui-react'
+import FeaturedProjects from '../components/FeaturedProjects'
 
 const Home = (props) => (
     <Grid.Row textAlign='center'>
@@ -29,10 +30,14 @@ const Home = (props) => (
                 </p>
             </Container>
         </Grid.Column>
-        <Grid.Column width={10} textAlign='center' style={{paddingTop: '5vh'}}>
-            <h2>
+        <Grid.Column width={10} textAlign='center'>
+            <Divider horizontal style={{paddingTop: '5vh', paddingBottom: '5vh'}}>
+            <h3>
+            <Icon name='code' color='violet' style={{paddingRight: "25px"}}/>
             Featured personal projects
-            </h2>
+            </h3>
+            </Divider>
+            <FeaturedProjects />
         </Grid.Column>
     </Grid.Row>
 )
