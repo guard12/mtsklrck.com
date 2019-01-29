@@ -1,7 +1,7 @@
-#[mtsklrck.com](mtsklrck.com)
+# [mtsklrck.com](mtsklrck.com)
 ======
 
-##Technologies used:
+## Technologies used:
 1. next.js
 2. reactJS
 3. semanticUI
