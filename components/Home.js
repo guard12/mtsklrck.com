@@ -5,6 +5,7 @@ import {
     Container, 
     Flag 
 } from 'semantic-ui-react'
+import Link from 'next/link'
 import FeaturedProjects from '../components/FeaturedProjects'
 
 const Home = (props) => (
@@ -37,7 +38,8 @@ const Home = (props) => (
             Featured personal projects
             </h3>
             </Divider>
-            <FeaturedProjects />
+            <FeaturedProjects />    
+                <Link href='/projects' prefetch><a>All projects >></a></Link>
         </Grid.Column>
     </Grid.Row>
 )

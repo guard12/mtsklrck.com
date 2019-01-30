@@ -17,7 +17,7 @@ const Footer = () => (
         </Grid.Column>
     </Grid>
     <Divider />
-    Copyright mtsklrck.com
+    &copy; Copyright 2019 | mtsklrck.com
   </Segment>
 )
   

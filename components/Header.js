@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Link from 'next/link'
 import { withRouter } from 'next/router'
 import { Menu, Sticky } from 'semantic-ui-react'
 

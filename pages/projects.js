@@ -1,8 +1,9 @@
-import Layout from "../components/Layout"
+import Layout from '../components/Layout'
+import ProjectsComponent from '../components/Projects'
 
 const Projects = () => (
     <Layout>
-      <p>Projects</p>
+      <ProjectsComponent />
     </Layout>
   )
   
