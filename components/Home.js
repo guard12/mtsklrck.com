@@ -39,7 +39,7 @@ const Home = (props) => (
             </h3>
             </Divider>
             <FeaturedProjects />    
-                <Link href='/projects' prefetch><a>All projects >></a></Link>
+                <Link href='/projects' prefetch><a style={{fontSize: "16px", display: "inline-block", marginTop: "20px"}}>All projects >></a></Link>
         </Grid.Column>
     </Grid.Row>
 )
