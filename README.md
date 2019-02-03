@@ -1,4 +1,4 @@
-# [mtsklrck.com](mtsklrck.now.sh)
+# [mtsklrck.com](https://mtsklrck.now.sh)
 
 ## Technologies used:
 1. next.js
