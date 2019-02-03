@@ -17,7 +17,7 @@ class AboutComponent extends Component {
             <Grid.Column width={10} textAlign='center'>
                 <h2 style={{display: "inline-block", marginBottom: "30px"}}><Icon name="male" color="black"/>About me</h2>
             </Grid.Column>
-            <Grid.Column width={8} style={{paddingTop: '5vh'}}>
+            <Grid.Column width={8}>
                 <Container>
                     <p style={{fontSize: "16px"}}>
                     Hello stranger! My name is Matus, I am {age} years old programmer from Slovakia <Flag name="sk" style={{width: "10px"}}/>, currently living and working in 
