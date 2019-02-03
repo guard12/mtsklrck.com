@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import { withRouter } from 'next/router'
+import Link from 'next/link'
 import { Menu, Sticky } from 'semantic-ui-react'
 
 class HeaderComponent extends Component {
-    state = { activeItem: this.props.router.pathname}
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  state = { activeItem: this.props.router.pathname}
 
   render(){
     const { activeItem } = this.state
@@ -13,23 +12,21 @@ class HeaderComponent extends Component {
       return <Sticky styleElement={{backgroundColor: 'white'}}>
         <Menu pointing secondary>
             <Menu.Item
-                name="Matus Kollarcik"
                 active={activeItem === '/'}
-                onClick={this.handleItemClick}
-                href='/'
-            />
+            >
+                <Link href='/' prefetch><a style={{color: 'black'}}>Matus Kollarcik</a></Link>
+            </Menu.Item>
             <Menu.Menu position='right'>
                 <Menu.Item
-                name='Projects'
-                active={activeItem === '/projects'}
-                onClick={this.handleItemClick}
-                href='/projects'
-                />
+                    active={activeItem === '/projects'}
+                >
+                    <Link href='/projects' prefetch><a style={{color: 'black'}}>Projects</a></Link>
+                </Menu.Item>
                 <Menu.Item
-                name='About me'
-                active={activeItem === '/about'}
-                href='/about'
-                />
+                    active={activeItem === '/about'}
+                >
+                    <Link href='/about' prefetch><a style={{color: 'black'}}>About me</a></Link>
+                </Menu.Item>
             </Menu.Menu>
         </Menu>
     </Sticky>
