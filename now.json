@@ -1,3 +1,7 @@
 {
-    "alias": ["mtsklrck.now.sh"]
+    "version": 2,
+    "alias": ["mtsklrck.now.sh"],
+    "builds": [
+        { "src": "package.json", "use": "@now/next" }
+    ]
 }
