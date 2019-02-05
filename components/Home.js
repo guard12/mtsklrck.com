@@ -41,6 +41,15 @@ const Home = (props) => (
             <FeaturedProjects />    
                 <Link href='/projects' prefetch><a style={{fontSize: "16px", display: "inline-block", marginTop: "20px"}}>All projects >></a></Link>
         </Grid.Column>
+        <Grid.Column width={10} textAlign='center'>
+            <Divider horizontal style={{paddingTop: '5vh', paddingBottom: '5vh'}}>
+            <h3>
+            <Icon name='briefcase' color='violet' style={{paddingRight: "25px"}}/>
+            Experience
+            </h3>
+            </Divider>
+                <Link href='/about' prefetch><a style={{fontSize: "16px", display: "inline-block", marginTop: "20px"}}>More info >></a></Link>
+        </Grid.Column>
     </Grid.Row>
 )
 
