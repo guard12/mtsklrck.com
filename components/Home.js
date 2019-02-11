@@ -7,6 +7,7 @@ import {
 } from 'semantic-ui-react'
 import Link from 'next/link'
 import FeaturedProjects from '../components/FeaturedProjects'
+import Experiences from '../components/AboutSubcomponents/Experiences'
 
 const Home = (props) => (
     <Grid.Row textAlign='center'>
@@ -41,14 +42,17 @@ const Home = (props) => (
             <FeaturedProjects />    
                 <Link href='/projects' prefetch><a style={{fontSize: "16px", display: "inline-block", marginTop: "20px"}}>All projects >></a></Link>
         </Grid.Column>
-        <Grid.Column width={10} textAlign='center'>
+        <Grid.Column width={10} >
             <Divider horizontal style={{paddingTop: '5vh', paddingBottom: '5vh'}}>
             <h3>
             <Icon name='briefcase' color='violet' style={{paddingRight: "25px"}}/>
             Experience
             </h3>
             </Divider>
+            <Experiences/>
+            <div style={{textAlign: "center"}}>
                 <Link href='/about' prefetch><a style={{fontSize: "16px", display: "inline-block", marginTop: "20px"}}>More info >></a></Link>
+            </div>
         </Grid.Column>
     </Grid.Row>
 )

@@ -3,9 +3,9 @@ import { Card, Icon, List, Image } from 'semantic-ui-react'
 
 const Experiences = () => (
     <Card.Group stackable itemsPerRow={3}>
-        <Card color="red">
+        <Card color="red" href="https://www.reviso.com" target="_blank">
             <Card.Content>
-                <Card.Header>Full-Stack Developer</Card.Header>
+                <Card.Header style={{color: "indianred"}}>Full-Stack Developer</Card.Header>
                 <Card.Meta>Reviso International ApS</Card.Meta>
                 <Card.Description>
                     Development of online accounting software for bookkeepers and small businesses.
@@ -21,15 +21,15 @@ const Experiences = () => (
                     <List.Item content="Jira, Mixpanel, Azure, Continuous Delivery, Kanban"/>
                 </List>
             </Card.Content>
-            <Card.Content extra>
+            <Card.Content extra textAlign="center">
                 <Icon name='time' />
                 2018 - Present
             </Card.Content>
         </Card>
 
-        <Card color="violet">
+        <Card color="violet" href="https://www.metacaresolutions.com" target="_blank">
             <Card.Content>
-                <Card.Header>Software Developer</Card.Header>
+                <Card.Header style={{color: "indianred"}}>Software Developer</Card.Header>
                 <Card.Meta>Meta Healthcare IT Solutions, LLC.</Card.Meta>
                 <Card.Description>
                     Development and maintanance of HealtCare system for hospitals and pharmacies in USA and Canada.
@@ -45,15 +45,15 @@ const Experiences = () => (
                     <List.Item content="SCRUM, Trac, GoToMeeting, Slack"/>
                 </List>
             </Card.Content>
-            <Card.Content extra>
+            <Card.Content extra textAlign="center">
                 <Icon name='time' />
                 2016 - 2018
             </Card.Content>
         </Card>
 
-        <Card color="blue">
+        <Card color="blue" href="https://www.dronerepublic.sk" target="_blank">
             <Card.Content>
-                <Card.Header>Webmaster</Card.Header>
+                <Card.Header style={{color: 'indianred'}}>Webmaster</Card.Header>
                 <Card.Meta>Dronerepublic.sk</Card.Meta>
                 <Card.Description>
                 Development of the e-shop for professional drones, cameras and accessory.
@@ -69,7 +69,7 @@ const Experiences = () => (
                     <List.Item content="Javascript"/>
                 </List>
             </Card.Content>
-            <Card.Content extra>
+            <Card.Content extra textAlign="center">
                 <Icon name='time' />
                 2016 - Present
             </Card.Content>

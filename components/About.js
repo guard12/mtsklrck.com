@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Icon, Container, Flag, Divider } from 'semantic-ui-react'
 import Experiences from './AboutSubcomponents/Experiences'
-
+import Interests from './AboutSubcomponents/Interests'
 class AboutComponent extends Component {
     state = { age: 0 }
 
@@ -46,13 +46,14 @@ class AboutComponent extends Component {
                 </Divider>
             </Grid.Column>
 
-            <Grid.Column width={10} textAlign='center'>
+            <Grid.Column width={10}>
                 <Divider horizontal style={{paddingTop: '5vh', paddingBottom: '5vh'}}>
                     <h3>
                         <Icon name='coffee' color='violet' style={{paddingRight: "25px"}}/>
                         Interests
                     </h3>
                 </Divider>
+                <Interests/>
             </Grid.Column>
         </Grid.Row>
     }
