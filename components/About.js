@@ -44,6 +44,9 @@ class AboutComponent extends Component {
                         Education
                     </h3>
                 </Divider>
+                <Container>
+                    <p>Coming...</p>
+                </Container>
             </Grid.Column>
 
             <Grid.Column width={10}>
