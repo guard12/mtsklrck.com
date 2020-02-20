@@ -26,11 +26,11 @@ const FeaturedProjects = (props) => (
     </Card>
 
     <Card
-        href='https://pilothub-19828.firebaseapp.com'
+        href='https://hub.dronerepublic.sk'
         target='_blank'
         color='violet'
     >
-        <Card.Content header='Pilothub.com' />
+        <Card.Content header='hub.dronerepublic.sk' />
         <Card.Content textAlign='left' description={
             <List size='medium' style={style} bulleted>
                 <List.Item content='Platform for professional drone pilots and cameramen'/>
