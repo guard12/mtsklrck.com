@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Grid, Icon, Container, Flag, Divider } from 'semantic-ui-react'
 import Experiences from './AboutSubcomponents/Experiences'
 import Interests from './AboutSubcomponents/Interests'
+
 class AboutComponent extends Component {
     state = { age: 0 }
 

@@ -1,0 +1,22 @@
+import App from 'next/app'
+import * as React from 'react'
+import { ThemeProvider } from 'styled-components'
+import { light, dark } from '../themes/themes'
+
+function MyApp({Component, pageProps}) {
+	const [ theme, setTheme ] = React.useState('dark')
+
+	const updateTheme = () => {
+		setTheme(theme === 'light' ? 'dark' : 'light')
+	}
+
+	const appTheme = theme === 'light' ? light : dark
+
+	return (
+	<ThemeProvider theme={appTheme} >
+		<Component {...pageProps} updateTheme={updateTheme}/>
+	</ThemeProvider>
+)
+}
+
+export default MyApp
