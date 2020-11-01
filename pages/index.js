@@ -1,6 +1,7 @@
 import { useTheme } from '@material-ui/core/styles'
-import { Card } from '../src/card'
 import { Typography } from '@material-ui/core'
+
+import { Card } from '../src/card'
 
 export default function Home() {
   const theme = useTheme()

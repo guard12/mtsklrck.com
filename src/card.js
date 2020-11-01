@@ -1,6 +1,6 @@
 import { useTheme, makeStyles  } from '@material-ui/core/styles'
 import { Avatar, Typography, Grid, Divider} from '@material-ui/core'
-import { GitHub, LinkedIn, Twitter } from '@material-ui/icons'
+import { GitHub, LinkedIn, Twitter, Mail } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
     text: {
@@ -8,6 +8,10 @@ const useStyles = makeStyles((theme) => ({
     },
     subtitle: {
         color: theme.palette.text.secondary,
+        textDecoration: 'none',
+        '&:hover': {
+            color: theme.palette.text.primary,
+        },
     },
     icons: {
       color: theme.palette.text.primary,
@@ -16,10 +20,31 @@ const useStyles = makeStyles((theme) => ({
     icon: {
         marginRight: "5px",
     },
-    card: {
+    iconWrapper: {
+        display: "flex",
+        marginBottom: "5px",
+        alignItems: "center",
+    },
+    pageLayout: {
         justifyContent: "center",
         marginTop: "100px",
         color: theme.palette.text.primary,
+    },
+    card: {
+        display: "flex",
+        border: "1px solid #333",
+        borderRadius: "8px",
+        padding: "32px",
+    },
+    avatar: {
+        width: "80px",
+        height: "80px",
+        border: "1px solid #333",
+        marginRight: "20px"
+    },
+    divider: {
+        background: "linear-gradient(#ec6192 4.44%,#ec4c34 21.45%,#ffbd2b 37.21%,#ebde56 54.63%,#57c754 70.8%,#53a1eb 84.07%) 0 100% transparent no-repeat",
+        margin: "0px 20px 0px 20px",
     },
   }))
 
@@ -28,20 +53,33 @@ export function Card() {
     return <Grid
         container
         alignItems="center"
-        className={classes.card}
+        className={classes.pageLayout}
     >
-        <div style={{ display: "flex" }}>
-            <Avatar alt="MK" src="/images/profile.jpg" style={{ width: "80px", height: "80px", border: "1px solid #333", marginRight: "20px"}}/>
+        <div className={classes.card}>
+            <Avatar alt="MK" src="/images/profile.jpg" className={classes.avatar}/>
             <div>
             <Typography variant="h5">Matus Kollarcik</Typography>
             
-            <Typography variant="subtitle1" className={classes.subtitle}>Software developer</Typography>
+            <Typography variant="subtitle1" className={classes.subtitle}>Software developer | Team Leader</Typography>
             </div>
-            <Divider light orientation="vertical" flexItem style={{ backgroundColor: "#fff", margin: "0px 20px 0px 20px" }}/>
+            <Divider light orientation="vertical" flexItem className={classes.divider}/>
             <div className={classes.icons}>
-                <div style={{display: "flex"}}><GitHub className={classes.icon}/> <span className={classes.subtitle}>@guard12</span></div>
-                <div style={{display: "flex"}}><LinkedIn className={classes.icon}/><span className={classes.subtitle}>@matuskollarcik</span></div>
-                <div style={{display: "flex"}}><Twitter className={classes.icon}/><span className={classes.subtitle}>@matuskollarcik</span></div>
+                <div className={classes.iconWrapper} >
+                    <GitHub className={classes.icon}/>
+                    <a href="https://github.com/guard12" target="_blank" className={classes.subtitle}>@guard12</a>
+                </div>
+                <div className={classes.iconWrapper}>
+                    <LinkedIn className={classes.icon}/>
+                    <a href="https://linkedin.com/in/matuskollarcik" target="_blank" className={classes.subtitle}>@matuskollarcik</a>
+                </div>
+                <div className={classes.iconWrapper}>
+                    <Twitter className={classes.icon}/>
+                    <a href="https://twitter.com/matuskollarcik" target="_blank" className={classes.subtitle}>@matuskollarcik</a>
+                </div>
+                <div className={classes.iconWrapper}>
+                    <Mail className={classes.icon}/>
+                    <a href="mailto:matus.kollarcik@gmail.com" className={classes.subtitle}>matus.kollarcik</a>
+                </div>
             </div>
         </div>
     </Grid>
