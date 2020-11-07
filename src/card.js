@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { useTheme, makeStyles  } from '@material-ui/core/styles'
 import { Avatar, Typography, Grid, Divider} from '@material-ui/core'
 import { GitHub, LinkedIn, Twitter, Mail } from '@material-ui/icons'
@@ -37,10 +39,12 @@ const useStyles = makeStyles((theme) => ({
         padding: "32px",
     },
     avatar: {
+        border: "1px solid #333",
+        marginRight: "20px",
+        borderRadius: "50%",
         width: "80px",
         height: "80px",
-        border: "1px solid #333",
-        marginRight: "20px"
+        overflow: "hidden",
     },
     divider: {
         background: "linear-gradient(#ec6192 4.44%,#ec4c34 21.45%,#ffbd2b 37.21%,#ebde56 54.63%,#57c754 70.8%,#53a1eb 84.07%) 0 100% transparent no-repeat",
@@ -56,7 +60,9 @@ export function Card() {
         className={classes.pageLayout}
     >
         <div className={classes.card}>
-            <Avatar alt="MK" src="/images/profile.jpg" className={classes.avatar}/>
+            <div className={classes.avatar}>
+                <Image alt="MK" src="/profile.jpg" priority width="80px" height="80px"/>
+            </div>
             <div>
             <Typography variant="h5">Matus Kollarcik</Typography>
             
