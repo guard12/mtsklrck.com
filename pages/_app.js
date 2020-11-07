@@ -16,7 +16,7 @@ export default function MyApp(props) {
 	}, [])
 
 	return (
-		<React.Fragment>
+		<>
 			<ThemeProvider theme={theme}>
 				{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
 				<Head>
@@ -33,6 +33,6 @@ export default function MyApp(props) {
 				<CssBaseline />
 				<Component {...pageProps} />
 			</ThemeProvider>
-		</React.Fragment>
+		</>
 	);
 }

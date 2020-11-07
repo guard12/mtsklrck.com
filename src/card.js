@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     },
     icons: {
       color: theme.palette.text.primary,
-      display: "grid",
+	  display: "grid",
+	  marginLeft: "20px",
     },
     icon: {
         marginRight: "5px",
@@ -48,7 +49,8 @@ const useStyles = makeStyles((theme) => ({
     },
     divider: {
         background: "linear-gradient(#ec6192 4.44%,#ec4c34 21.45%,#ffbd2b 37.21%,#ebde56 54.63%,#57c754 70.8%,#53a1eb 84.07%) 0 100% transparent no-repeat",
-        margin: "0px 20px 0px 20px",
+		height: "100%",
+		width: "1px"
     },
   }))
 
@@ -59,34 +61,42 @@ export function Card() {
         alignItems="center"
         className={classes.pageLayout}
     >
-        <div className={classes.card}>
-            <div className={classes.avatar}>
-                <Image alt="MK" src="/profile.jpg" priority width="80px" height="80px"/>
-            </div>
-            <div>
-            <Typography variant="h5">Matus Kollarcik</Typography>
-            
-            <Typography variant="subtitle1" className={classes.subtitle}>Software developer | Team Leader</Typography>
-            </div>
-            <Divider light orientation="vertical" flexItem className={classes.divider}/>
-            <div className={classes.icons}>
-                <div className={classes.iconWrapper} >
-                    <GitHub className={classes.icon}/>
-                    <a href="https://github.com/guard12" target="_blank" className={classes.subtitle}>@guard12</a>
-                </div>
-                <div className={classes.iconWrapper}>
-                    <LinkedIn className={classes.icon}/>
-                    <a href="https://linkedin.com/in/matuskollarcik" target="_blank" className={classes.subtitle}>@matuskollarcik</a>
-                </div>
-                <div className={classes.iconWrapper}>
-                    <Twitter className={classes.icon}/>
-                    <a href="https://twitter.com/matuskollarcik" target="_blank" className={classes.subtitle}>@matuskollarcik</a>
-                </div>
-                <div className={classes.iconWrapper}>
-                    <Mail className={classes.icon}/>
-                    <a href="mailto:matus.kollarcik@gmail.com" className={classes.subtitle}>matus.kollarcik</a>
-                </div>
-            </div>
-        </div>
+        <Grid container xs={12} sm={6} md={6} lg={6} spacing={1} className={classes.card}>
+			<Grid item xs={3} sm={2} md={2} lg={2}>
+				<div className={classes.avatar}>
+					<Image alt="MK" src="/profile.jpg" priority width="80px" height="80px"/>
+				</div>
+			</Grid>
+			<Grid item xs={9} sm={5} md={5} lg={5}>
+				<div>
+				<Typography variant="h5">Matus Kollarcik</Typography>
+				
+				<Typography variant="subtitle1" className={classes.subtitle}>Software developer | Team Leader</Typography>
+				</div>
+			</Grid>
+			<Grid item>
+				<div className={classes.divider}></div>
+			</Grid>
+			<Grid item xs={11} sm={4} md={4} lg={4}>
+				<div className={classes.icons}>
+					<div className={classes.iconWrapper} >
+						<GitHub className={classes.icon}/>
+						<a href="https://github.com/guard12" target="_blank" className={classes.subtitle}>@guard12</a>
+					</div>
+					<div className={classes.iconWrapper}>
+						<LinkedIn className={classes.icon}/>
+						<a href="https://linkedin.com/in/matuskollarcik" target="_blank" className={classes.subtitle}>@matuskollarcik</a>
+					</div>
+					<div className={classes.iconWrapper}>
+						<Twitter className={classes.icon}/>
+						<a href="https://twitter.com/matuskollarcik" target="_blank" className={classes.subtitle}>@matuskollarcik</a>
+					</div>
+					<div className={classes.iconWrapper}>
+						<Mail className={classes.icon}/>
+						<a href="mailto:matus.kollarcik@gmail.com" className={classes.subtitle}>matus.kollarcik</a>
+					</div>
+            	</div>
+			</Grid>
+        </Grid>
     </Grid>
 }
