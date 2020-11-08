@@ -2,7 +2,7 @@ import { useTheme } from '@material-ui/core/styles'
 import { Typography, Grid } from '@material-ui/core'
 
 import { Card } from '../src/card'
-import { Logo } from '../src/logo'
+//import { Logo } from '../src/logo'
 
 export default function Home() {
   const theme = useTheme()
