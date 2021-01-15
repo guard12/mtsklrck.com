@@ -13,7 +13,8 @@ export default function Home() {
           backgroundColor: theme.palette.background.main, 
           height: "100vh",
         }}>
-        <div style={{paddingLeft: "20%", paddingTop: "20px" }}><Logo /></div>
+        <div style={{ textAlign: "center", paddingTop: "20px" }}><Logo /></div>
+        <div style={{ textAlign: "center", paddingTop: "20px" }}>CLASSY | MINIMALIST</div>
         
        <Card />
         <footer style={{bottom: "20px", position: "fixed", width: "100%", padding: "10px"}}>

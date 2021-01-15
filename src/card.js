@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
     pageLayout: {
         justifyContent: "center",
-        marginTop: "100px",
+        marginTop: "80px",
         color: theme.palette.text.primary,
     },
     card: {
@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
         border: "1px solid #333",
         marginRight: "20px",
-        borderRadius: "50%",
+        borderRadius: "8px",
         width: "80px",
         height: "80px",
         overflow: "hidden",
@@ -71,7 +71,8 @@ export function Card() {
 				<div>
 				<Typography variant="h5">Matus Kollarcik</Typography>
 				
-				<Typography variant="subtitle1" className={classes.subtitle}>Software developer | Team Leader</Typography>
+				<Typography variant="subtitle1" className={classes.subtitle}>Web Developer | Team Leader</Typography>
+                <Typography variant="subtitle1" className={classes.subtitle}>Reviso</Typography>
 				</div>
 			</Grid>
 			<Grid item>
