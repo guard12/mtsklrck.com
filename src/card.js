@@ -61,7 +61,7 @@ export function Card() {
         alignItems="center"
         className={classes.pageLayout}
     >
-        <Grid container xs={12} sm={6} md={6} lg={6} spacing={1} className={classes.card}>
+        <Grid item xs={12} sm={6} md={6} lg={6} className={classes.card}>
 			<Grid item xs={3} sm={2} md={2} lg={2}>
 				<div className={classes.avatar}>
 					<Image alt="MK" src="/profile.jpg" priority width="80px" height="80px"/>
