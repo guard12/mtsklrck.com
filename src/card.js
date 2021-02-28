@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
         height: "80px",
         overflow: "hidden",
     },
+    avatarGrid: {
+        minWidth: "80px",
+    },
     divider: {
         background: "linear-gradient(#ec6192 4.44%,#ec4c34 21.45%,#ffbd2b 37.21%,#ebde56 54.63%,#57c754 70.8%,#53a1eb 84.07%) 0 100% transparent no-repeat",
 		height: "100%",
@@ -62,7 +65,7 @@ export function Card() {
         className={classes.pageLayout}
     >
         <Grid item xs={12} sm={6} md={6} lg={6} className={classes.card}>
-			<Grid item xs={3} sm={2} md={2} lg={2}>
+			<Grid item xs={3} sm={2} md={2} lg={2} className={classes.avatarGrid}>
 				<div className={classes.avatar}>
 					<Image alt="MK" src="/profile.jpg" priority width="80px" height="80px"/>
 				</div>
