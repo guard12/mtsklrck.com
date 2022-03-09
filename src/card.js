@@ -74,8 +74,7 @@ export function Card() {
 				<div>
 				<Typography variant="h5">Matus Kollarcik</Typography>
 				
-				<Typography variant="subtitle1" className={classes.subtitle}>Web Developer | Team Leader</Typography>
-                <Typography variant="subtitle1" className={classes.subtitle}>Reviso</Typography>
+				<Typography variant="subtitle1" className={classes.subtitle}>Senior Frontend Developer</Typography>
 				</div>
 			</Grid>
 			<Grid item>
