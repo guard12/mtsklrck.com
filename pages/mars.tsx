@@ -5,7 +5,8 @@ export default function Mars() {
   const { data } = useMarsPhoto();
   if (!data) return <div>Loading ...</div>
 
-  const source = data[0].img_src
+  const randompicture = data[(Math.random() * data.length) | 0]
+  const source = randompicture.img_src
 
   return (
     <div className="h-full bg-black text-center justify-center">
