@@ -10,7 +10,7 @@ export const Home = () => {
     <div>
       <main 
         style={{ 
-          backgroundColor: theme.palette.background.main, 
+          backgroundColor: "#000", 
           height: "100vh",
         }}>
         <div style={{ textAlign: "center", paddingTop: "20px", marginRight: "20px" }}><Logo /></div>
