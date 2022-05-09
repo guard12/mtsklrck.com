@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "alias": ["mtsklrck.now.sh"],
+    "alias": ["mtsklrck.vercel.app"],
     "builds": [
         { "src": "package.json", "use": "@now/next" }
     ]
