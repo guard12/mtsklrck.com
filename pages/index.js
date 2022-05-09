@@ -1,6 +1,6 @@
 import { Home } from '../components/legacy_home'
 
-export default function Home() {
+export default function LegacyHome() {
   return (
     <div>
       <Home />
