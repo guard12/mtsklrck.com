@@ -2,9 +2,8 @@
 
 ## Technologies used:
 1. next.js
-2. reactJS
-3. semanticUI
+2. tailwind
 
 ## Deployed and hosted on
 
-[Zeit](https://zeit.co/)
+[Zeit](https://vercel.com/)
