@@ -1,30 +1,30 @@
-import { GitHub, LinkedIn, Twitter, Mail } from '@material-ui/icons'
+import { GithubIcon, LinkedInIcon, TwitterIcon, MailIcon } from './icons'
 
 export const Socials = () => {
   return (
-    <div className="text-white flex flex-col">
-      <div>
-        <GitHub className="text-violet-900"/>
+    <div className="text-white flex flex-col gap-3">
+      <div className="flex">
+        <GithubIcon className="fill-violet-900 w-5"/>
         <a className="text-gray-400 hover:text-white ml-2" href="https://github.com/guard12" target="_blank" rel="noreferrer">
-          Follow me on GitHub @guard12
+          Follow me on GitHub
         </a>
       </div>
-      <div>
-        <LinkedIn className="text-blue-600" />
+      <div className="flex">
+        <LinkedInIcon className="fill-blue-600 w-5" />
         <a className="text-gray-400 hover:text-white ml-2" href="https://linkedin.com/in/matuskollarcik" target="_blank" rel="noreferrer">
-          Follow me on LinkedIn @matuskollarcik
+          Follow me on LinkedIn
         </a>
       </div>
-      <div>
-        <Twitter className="text-blue-400" />
+      <div className="flex">
+        <TwitterIcon className="fill-blue-400 w-5" />
         <a className="text-gray-400 hover:text-white ml-2" href="https://twitter.com/matuskollarcik" target="_blank" rel="noreferrer">
-          Follow me on Twitter @matuskollarcik
+          Follow me on Twitter
         </a>
       </div>
-      <div>
-        <Mail className="text-red-900" />
+      <div className="flex">
+        <MailIcon className="fill-rose-900 w-5" />
         <a className="text-gray-400 hover:text-white ml-2" href="mailto:matus.kollarcik@gmail.com">
-          Drop me an email matus.kollarcik@gmail.com
+          Drop me an email
         </a>
       </div>
     </div>
