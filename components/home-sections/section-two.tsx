@@ -1,11 +1,14 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 import { useMarsWeather } from '../../hooks/useMarsWeather'
 
 export const SectionTwo = () => {
-  const { data } = useMarsWeather();
+  const { data, marsPhoto } = useMarsWeather();
 
   if (!data) return null
+
+  const photo = marsPhoto ? marsPhoto[0] : null
 
   return (
     <div className="flex justify-center h-5/6 overflow-hidden mt-20 sm:mt-0">
@@ -43,12 +46,19 @@ export const SectionTwo = () => {
           transition={{ duration: 1 }}
         />
         <motion.div
-          className="flex sm:w-5/12 w-11/12 sm:py-24 sm:justify-start justify-center"
+          className="flex sm:w-5/12 w-11/12 sm:py-24 sm:justify-start justify-center overflow-hidden"
           initial={{ x: '100vw' }}
           animate={{ x: 0 }}
           transition={{ type: 'tween', delay: 0.5, duration: 0.5 }}
         >
-          Photo
+          {photo && <div>
+            <Image src={photo.img_src} layout="intrinsic" width={440} height={260} alt="mars_photo" className="rounded-lg"/>
+            <div className="text-white">
+              <label className="text-sm font-bold">Rover:</label> <label className="text-sm font-thin">{photo.rover.name}</label>
+              <br />
+              <label className="text-sm font-bold">Camera:</label> <label className="text-sm font-thin">{photo.camera.full_name}</label>
+            </div>
+          </div>}
         </motion.div>
       </div>
     </div>
