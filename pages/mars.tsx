@@ -1,4 +1,6 @@
 
+import Image from 'next/image'
+
 import { useMarsPhoto } from '../hooks';
 
 export default function Mars() {
@@ -14,7 +16,7 @@ export default function Mars() {
         Hello from Mars
       </h1>
       <div className="justify-center flex">
-        <img src={source} className="h-full" />
+        <Image src={source} className="h-full" alt="mars"/>
       </div>
     </div>
   )

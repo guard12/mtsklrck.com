@@ -11,23 +11,11 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    colors: {
-      'black': '#000',
-      'white': '#fff',
-      'red': '#FF5B4F',
-    },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
     extend: {
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
+      colors: {
+        'border-color': '#333',
+        'custom-gradient': 'linear-gradient(#ec6192 4.44%,#ec4c34 21.45%,#ffbd2b 37.21%,#ebde56 54.63%,#57c754 70.8%,#53a1eb 84.07%) 0 100% transparent no-repeat',
       },
-      borderRadius: {
-        '4xl': '2rem',
-      }
     }
   },
 }

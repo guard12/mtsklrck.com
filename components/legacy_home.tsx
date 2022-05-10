@@ -1,26 +1,18 @@
-import { useTheme } from '@material-ui/core/styles'
-import { Typography } from '@material-ui/core'
-
-import { Card } from '../src/card'
-import { Logo } from '../src/logo'
+import { Card } from './card'
+import { Logo } from './logo'
 
 export const Home = () => {
-  const theme = useTheme()
   return (
     <div>
-      <main 
-        style={{ 
-          backgroundColor: "#000", 
-          height: "100vh",
-        }}>
-        <div style={{ textAlign: "center", paddingTop: "20px", marginRight: "20px" }}><Logo /></div>
-        <div style={{ textAlign: "center", paddingTop: "20px" }}>CLASSY | MINIMALIST</div>
-        
-       <Card />
-        <footer style={{bottom: "20px", position: "fixed", width: "100%", padding: "10px"}}>
-          <div style={{textAlign: "center" }}> <Typography variant="body2">"When something is important enough, you do it even if the odds are not in your favor." - Elon Musk</Typography>
-          </div>
-          </footer>
+      <div className="flex justify-center mr-5 pt-5">
+        <Logo />
+      </div>
+      <main>
+        <div className="pt-5 text-center text-white">CLASSY | MINIMALIST</div>
+        <Card />
+        <footer className="bottom-5 fixed w-full p-3 text-center text-white">
+          <p className="text-xs">{`"When something is important enough, you do it even if the odds are not in your favor." - Elon Musk`}</p>
+        </footer>
       </main>
     </div>
   )
