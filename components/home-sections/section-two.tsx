@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-import { useMarsWeather } from '../../hooks/useMarsWeather'
+import { useMarsWeather } from '../../hooks'
 
 export const SectionTwo = () => {
   const { data, marsPhoto } = useMarsWeather();

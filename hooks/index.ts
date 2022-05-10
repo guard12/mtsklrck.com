@@ -1,1 +1,1 @@
-export * from './useMarsPhoto';
+export * from './useMarsWeather';
