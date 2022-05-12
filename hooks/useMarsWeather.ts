@@ -43,7 +43,7 @@ type Photos = {
 
 export function useMarsWeather () {
   const { data, error } = useSWRImmutable<Weather>(`https://api.maas2.apollorion.com/`, fetcher)
-  const { data: marsPhotoData, error: photoError } = useSWRImmutable<Photos>(data ? `https://mars-photos.herokuapp.com/api/v1/rovers/Perseverance/photos?sol=433` : null, fetcher)
+  const { data: marsPhotoData, error: photoError } = useSWRImmutable<Photos>(data ? `https://mars-photos.herokuapp.com/api/v1/rovers/Perseverance/photos?sol=420` : null, fetcher)
 
   const marsPhoto = marsPhotoData?.photos
 

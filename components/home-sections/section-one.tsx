@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
+import profilePicture from '../../public/images/profilenew.jpg'
 import { Socials } from '../socials'
 
 export const SectionOne = () => {
@@ -16,13 +17,14 @@ export const SectionOne = () => {
           className="flex sm:w-5/12 w-11/12 sm:py-24 sm:justify-end justify-center"
         >
           <div>
-            <div className="border-border-color border rounded-md overflow-hidden w-120 h-240">
+            <div className="overflow-hidden w-48 h-48 rounded-md">
               <Image
                 alt="MK"
-                src="/profile.jpg"
+                src={profilePicture}
                 priority
-                width="200px"
-                height="200px"
+                width="192px"
+                height="192px"
+                quality={100}
               />
             </div>
           </div>

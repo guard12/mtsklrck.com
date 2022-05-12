@@ -8,7 +8,7 @@ export const SectionTwo = () => {
 
   if (!data) return null
 
-  const photo = marsPhoto ? marsPhoto[0] : null
+  const photo = marsPhoto ? marsPhoto[Math.floor(Math.random()*marsPhoto.length)] : null
 
   return (
     <div className="flex justify-center h-5/6 overflow-hidden mt-20 sm:mt-0">
@@ -39,7 +39,7 @@ export const SectionTwo = () => {
          </div>
         </motion.div>
         <motion.span
-          className="w-px bg-gradient-to-br from-red-800 to-violet-900 h-full hidden sm:flex"
+          className="w-px bg-gradient-to-b from-red-800 via-violet-900 to-black h-full hidden sm:flex"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
