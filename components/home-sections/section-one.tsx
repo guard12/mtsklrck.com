@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
@@ -11,9 +12,11 @@ export const SectionOne = () => {
         className="flex sm:w-6/12 w-11/12 sm:justify-evenly items-center flex-col sm:flex-row gap-20 sm:gap-0"
       >
         <motion.div
-         initial={{ x: '-100vw' }}
-         animate={{ x: 0 }}
-         transition={{ type: 'tween', delay: 0.5, duration: 0.5 }}
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'tween',
+            delay: 0.5,
+            duration: 0.5 }}
           className="flex sm:w-5/12 w-11/12 sm:py-24 sm:justify-end justify-center"
         >
           <div>
@@ -44,7 +47,9 @@ export const SectionOne = () => {
           className="flex sm:w-5/12 w-11/12 sm:py-24 sm:justify-start justify-center"
           initial={{ x: '100vw' }}
           animate={{ x: 0 }}
-          transition={{ type: 'tween', delay: 0.5, duration: 0.5 }}
+          transition={{ type: 'tween',
+            delay: 0.5,
+            duration: 0.5 }}
         >
           <Socials />
         </motion.div>

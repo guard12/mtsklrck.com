@@ -1,10 +1,11 @@
+import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 import { useMarsWeather } from '../../hooks'
 
 export const SectionTwo = () => {
-  const { data, marsPhoto } = useMarsWeather();
+  const { data, marsPhoto } = useMarsWeather()
 
   if (!data) return null
 
@@ -16,12 +17,14 @@ export const SectionTwo = () => {
         className="flex sm:w-6/12 w-11/12 sm:justify-evenly items-center flex-col sm:flex-row gap-20 sm:gap-0"
       >
         <motion.div
-         initial={{ x: '-100vw' }}
-         animate={{ x: 0 }}
-         transition={{ type: 'tween', delay: 0.5, duration: 0.5 }}
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'tween',
+            delay: 0.5,
+            duration: 0.5 }}
           className="flex sm:w-5/12 w-11/12 sm:py-24 sm:justify-end justify-center"
         >
-         <div className="text-white border border-violet-900 p-5 rounded-xl">
+          <div className="text-white border border-violet-900 p-5 rounded-xl">
             <h3 className="text-bold">Current Weather on Mars</h3>
             <div className="flex pt-6 gap-6">
               <div>
@@ -36,7 +39,7 @@ export const SectionTwo = () => {
               </div>
             </div>
             <div className="font-thin text-xs text-gray-400 mt-2">Powered by api.nasa.gov</div>
-         </div>
+          </div>
         </motion.div>
         <motion.span
           className="w-px bg-gradient-to-b from-red-800 via-violet-900 to-black h-full hidden sm:flex"
@@ -49,10 +52,19 @@ export const SectionTwo = () => {
           className="flex sm:w-5/12 w-11/12 sm:py-24 sm:justify-start justify-center overflow-hidden"
           initial={{ x: '100vw' }}
           animate={{ x: 0 }}
-          transition={{ type: 'tween', delay: 0.5, duration: 0.5 }}
+          transition={{ type: 'tween',
+            delay: 0.5,
+            duration: 0.5 }}
         >
           {photo && <div>
-            <Image src={photo.img_src} layout="intrinsic" width={440} height={260} alt="mars_photo" className="rounded-lg"/>
+            <Image
+              src={photo.img_src}
+              priority
+              layout="intrinsic"
+              width={440}
+              height={260}
+              alt="mars_photo"
+              className="rounded-lg"/>
             <div className="text-white">
               <label className="text-sm font-bold">Rover:</label> <label className="text-sm font-thin">{photo.rover.name}</label>
               <br />

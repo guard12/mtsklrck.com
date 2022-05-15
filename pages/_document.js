@@ -8,13 +8,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-          <link rel="preload" href="/break-extralight.ttf" as="font" crossOrigin="" />
-          <style jsx global>{`@font-face {
-					font-family: 'Break';
-					src: url('/break-extralight.ttf');
-					font-weight: 600;
-				}`}</style>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         </Head>
         <body>
           <Main />
