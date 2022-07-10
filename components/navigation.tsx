@@ -10,7 +10,8 @@ export const Navigation = () => {
           href="https://www.buymeacoffee.com/guard"
           referrerPolicy='no-referrer'
           target="_blank"
-          className="text-white text-sm hover:text-red-800 active:text-red-900">Buy me a coffee</a>
+          className="text-white text-sm hover:text-red-800 active:text-red-900"
+          rel="noreferrer">Buy me a coffee</a>
       </div>
     </div>
   )

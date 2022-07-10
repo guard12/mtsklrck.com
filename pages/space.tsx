@@ -9,7 +9,9 @@ export default function Space() {
         muted
         className="z-10 w-auto min-w-full min-h-full max-w-none"
       >
-        <source src="https://www.dropbox.com/s/8378sd1gwu5ioco/Pexels%20Videos%204482.mp4?raw=1" type="video/mp4" />
+        <source
+          src="https://www.dropbox.com/s/8378sd1gwu5ioco/Pexels%20Videos%204482.mp4?raw=1"
+          type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
