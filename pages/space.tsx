@@ -2,8 +2,16 @@ import React from 'react'
 
 export default function Space() {
   return  <div className="bg-black min-h-screen">
-    <div className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
-      <div className="absolute z-30 p-5 text-5xl text-white font-bold">FUTURE IS NOW.</div>
+    <div className="relative flex items-center justify-center h-screen overflow-hidden">
+      <div className="absolute z-30 p-5">
+        <div className="text-5xl font-bold 
+            bg-gradient-to-r bg-clip-text  text-transparent 
+            from-indigo-600 via-sky-500 to-fuchsia-700
+            animate-text
+            ">
+              FUTURE IS HERE.
+        </div>
+      </div>
       <video
         autoPlay
         muted
