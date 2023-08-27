@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export function Logo() {
   const icon = {
@@ -13,7 +14,7 @@ export function Logo() {
     }
   }
      
-  return <>
+  return <Link href='/'>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
@@ -39,5 +40,5 @@ export function Logo() {
         }}
       />
     </svg>
-  </>
+  </Link>
 }

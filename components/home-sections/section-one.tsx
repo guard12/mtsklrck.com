@@ -25,8 +25,8 @@ export const SectionOne = () => {
                 alt="MK"
                 src={profilePicture}
                 priority
-                width="192px"
-                height="192px"
+                width={192}
+                height={192}
                 quality={100}
               />
             </div>

@@ -64,8 +64,9 @@ export const SectionTwo = () => {
               width={440}
               height={260}
               alt="mars_photo"
-              className="rounded-lg"/>
-            <div className="text-white">
+              className="rounded-lg"
+            />
+            <div className="text-white ml-1 mt-2">
               <label className="text-sm font-bold">Rover:</label> <label className="text-sm font-thin">{photo.rover.name}</label>
               <br />
               <label className="text-sm font-bold">Camera:</label> <label className="text-sm font-thin">{photo.camera.full_name}</label>
