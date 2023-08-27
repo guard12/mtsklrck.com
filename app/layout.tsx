@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
 import { Roboto } from 'next/font/google'
 import '../styles/globals.css'
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           <Navigation />
           {children}
           <Footer />
+          <Analytics />
         </div>
       </body>
     </html>
