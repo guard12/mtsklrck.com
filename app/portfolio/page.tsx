@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 
 export default function Portfolio() {
@@ -12,6 +10,6 @@ export default function Portfolio() {
           ">
             COMING SOON.
       </div>
-  </div>
+    </div>
   )
 }
