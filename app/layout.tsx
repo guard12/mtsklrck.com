@@ -1,6 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react'
 import { Roboto } from 'next/font/google'
 import '../styles/globals.css'
 
