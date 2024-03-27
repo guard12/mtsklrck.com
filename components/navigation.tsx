@@ -1,6 +1,7 @@
 import React from 'react'
 import { Logo } from './logo'
 import Link from 'next/link'
+import { buttonVariants } from "components/ui/button"
 
 export const Navigation = () => {
   return (
@@ -13,20 +14,25 @@ export const Navigation = () => {
               href="/space"
               className="text-white text-sm hover:text-red-800 active:text-red-900"
               hidden>Space</Link>
+            
             <Link
               href="/portfolio"
-              className="text-white text-sm hover:text-red-800 active:text-red-900">Portfolio</Link>
+              className={buttonVariants({ variant: "link", size: "sm", className: "text-white text-sm hover:text-red-800 active:text-red-900"})}
+            >
+              Portfolio
+            </Link>
             <div
-              className="h-[20px] mx-3 min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-20 dark:opacity-100">
+              className="h-[36px] mx-3 min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-20 dark:opacity-100">
             </div>
-            <a
+            <Link
               href="https://www.buymeacoffee.com/guard"
               referrerPolicy='no-referrer'
               target="_blank"
-              className="text-white text-sm hover:text-red-800 active:text-red-900"
-              rel="noreferrer">
-                  Buy me a coffee
-            </a>
+              rel="noreferrer"
+              className={buttonVariants({ variant: "link", size: "sm", className: "text-white text-sm hover:text-red-800 active:text-red-900"})}
+            >
+              Buy me a coffee
+            </Link>
           </div>
           
         </div>
