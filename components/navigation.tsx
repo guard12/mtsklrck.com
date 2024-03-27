@@ -1,7 +1,7 @@
 import React from 'react'
 import { Logo } from './logo'
 import Link from 'next/link'
-import { buttonVariants } from "components/ui/button"
+import { buttonVariants } from 'components/ui/button'
 
 export const Navigation = () => {
   return (
@@ -17,7 +17,9 @@ export const Navigation = () => {
             
             <Link
               href="/portfolio"
-              className={buttonVariants({ variant: "link", size: "sm", className: "text-white text-sm hover:text-red-800 active:text-red-900"})}
+              className={buttonVariants({ variant: 'link',
+                size: 'sm',
+                className: 'text-white text-sm hover:text-red-800 active:text-red-900'})}
             >
               Portfolio
             </Link>
@@ -29,7 +31,9 @@ export const Navigation = () => {
               referrerPolicy='no-referrer'
               target="_blank"
               rel="noreferrer"
-              className={buttonVariants({ variant: "link", size: "sm", className: "text-white text-sm hover:text-red-800 active:text-red-900"})}
+              className={buttonVariants({ variant: 'link',
+                size: 'sm',
+                className: 'text-white text-sm hover:text-red-800 active:text-red-900'})}
             >
               Buy me a coffee
             </Link>
