@@ -9,7 +9,10 @@ import { Footer } from '../components/footer'
 
 export const metadata: Metadata = {
   title: 'Mtsklrck',
-  description: 'Welcome to my personal website.', 
+  description: 'Welcome to my personal website.',
+  other: {
+    'google-adsense-account': 'ca-pub-3029892541073818',
+  },
 }
 
 const roboto = Roboto({
