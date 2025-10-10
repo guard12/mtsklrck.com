@@ -7,6 +7,7 @@ export default function Coinify() {
       <div className='flex flex-col w-full xl:w-1/3'>
         <h2 className='text-2xl text-white'>Coinify in iframe</h2>
         <iframe
+          allow="clipboard-write"
           src="https://checkout.sandbox.coinify.com/demo/payment"
           className='h-screen'/>
       </div>
