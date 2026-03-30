@@ -15,9 +15,10 @@
   "rules": {
     "semi": ["error", "never"],
     "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-    "object-property-newline": ["error"],
+    "object-property-newline": ["off"],
     "indent": ["error", 2],
-    "react/jsx-max-props-per-line": ["warn"],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-max-props-per-line": ["off"],
     "react/jsx-indent-props": [2, 2],
     "react/jsx-first-prop-new-line": ["warn", "multiline-multiprop"],
     "react/prop-types": ["off"]

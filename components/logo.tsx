@@ -1,27 +1,25 @@
 'use client'
 
-import React from 'react'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 export function Logo() {
   const icon = {
     hidden: {
       pathLength: 0,
-      fill: 'rgba(255, 255, 255, 0)'
+      fill: 'rgba(255, 255, 255, 0)',
     },
     visible: {
       pathLength: 1,
-      fill: 'rgba(255, 255, 255, 1)'
-    }
+      fill: 'rgba(255, 255, 255, 1)',
+    },
   }
-     
-  return <Link href='/'>
+
+  return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
       style={{
-        width: '50px',
+        width: '36px',
         overflow: 'visible',
         stroke: '#fff',
         strokeWidth: '1',
@@ -35,12 +33,10 @@ export function Logo() {
         initial="hidden"
         animate="visible"
         transition={{
-          default: { duration: 2,
-            ease: 'easeInOut' },
-          fill: { duration: 2,
-            ease: [1, 0, 0.8, 1] }
+          default: { duration: 2, ease: 'easeInOut' },
+          fill: { duration: 2, ease: [1, 0, 0.8, 1] },
         }}
       />
     </svg>
-  </Link>
+  )
 }

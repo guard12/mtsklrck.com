@@ -1,41 +1,46 @@
-import React from 'react'
+import { type ReactNode } from 'react'
 import { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
-import { Roboto } from 'next/font/google'
-import '../styles/globals.css'
+import { Inter } from 'next/font/google'
+import '@/styles/globals.css'
 
-import { Navigation } from '../components/navigation'
-import { Footer } from '../components/footer'
+import { BlackHoleShader } from '@/components/black-hole-shader'
 
 export const metadata: Metadata = {
-  title: 'Mtsklrck',
-  description: 'Welcome to my personal website.',
-  other: {
-    'google-adsense-account': 'ca-pub-3029892541073818',
+  title: 'Matus Kollarcik — Senior Frontend Engineer',
+  description:
+    'Personal portfolio of Matus Kollarcik. Senior Frontend Engineer building cryptocurrency payment solutions and side projects.',
+  openGraph: {
+    title: 'Matus Kollarcik — Senior Frontend Engineer',
+    description:
+      'Building cryptocurrency payment solutions at Coinify. Creator of Beerleague.net.',
+    type: 'website',
   },
 }
 
-const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: [ 'latin' ],
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
 })
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
-    <html
-      lang="en"
-      className={roboto.className}>
-      <body>
-        <div className="bg-black min-h-screen">
-          <Navigation />
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans antialiased overflow-hidden">
+        <BlackHoleShader />
+        <div
+          className="fixed inset-0 bg-black/60"
+          style={{ zIndex: 1 }}
+          aria-hidden="true"
+        />
+        <main className="relative z-10 flex items-center justify-center min-h-screen px-6">
           {children}
-          <Footer />
-          <Analytics />
-        </div>
+        </main>
+        <Analytics />
       </body>
     </html>
   )
